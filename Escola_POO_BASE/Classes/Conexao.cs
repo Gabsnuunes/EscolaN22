@@ -15,6 +15,8 @@ namespace Escola_POO_BASE.Classes
 
         #region Variáveis
          
+       
+       
         //String de Conexão                                        Informações Chumbadas - HardCode
         private static string _strConexao = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=EscolaN22;Integrated Security=True";
 
@@ -24,6 +26,9 @@ namespace Escola_POO_BASE.Classes
         public SqlDataAdapter da; // Adaptador para alguns componentes
         public SqlDataReader dr; //Recebe os select's
         public DataSet ds; // Trabalha com multiplas tabelas
+
+
+
 
 
 
