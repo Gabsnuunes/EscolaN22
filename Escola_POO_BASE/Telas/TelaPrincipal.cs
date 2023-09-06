@@ -55,9 +55,7 @@ namespace Escola_POO_BASE.Telas
 
             }
 
-            LblBoasVindas.Text = $"Bem-Vindo(a), {_userLogado.Nome}!";
-            TslNomeUserLogado.Text = _userLogado.Nome;
-            TslEmailUserLogado.Text = _userLogado.Email;
+
 
 
             //TODO 2- Descobrir como mostrar a data e hora completa no ToolStrip.            
@@ -77,7 +75,8 @@ namespace Escola_POO_BASE.Telas
         private void TsiCadastraAluno_Click(object sender, EventArgs e)
         {
             TelaCadastraAluno tlCadAluno = new TelaCadastraAluno(_userLogado);
-            tlCadAluno.ShowDialog();
+            tlCadAluno.MdiParent = this;
+            tlCadAluno.Show();
 
         }
 
